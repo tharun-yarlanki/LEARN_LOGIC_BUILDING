@@ -76,4 +76,18 @@ output :
 20
  Logic: Start from 2 and increment by 2 to get even numbers.
 ======================================================================================
+ 4. Print first 10 odd numbers
+#include <stdio.h>
+
+int main() {
+    int i;
+    for(i = 1; i <= 19; i += 2) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+
+
+ Logic: Start from 1 and increment by 2 to get odd numbers.
+======================================================================================
 
