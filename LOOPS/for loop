@@ -118,7 +118,7 @@ sum=55
  Logic: Initialize sum = 0, add each number from 1 to 10 into sum.
 ======================================================================================
 
-✅ 6. Print multiplication table of a number (e.g., 5)
+ 6. Print multiplication table of a number (e.g., 5)
 #include <stdio.h>
 
 int main() {
@@ -142,9 +142,30 @@ output :
 5 X 8 = 40
 5 X 9 = 45
 5 X 10 = 50
-💡 Logic: Multiply the number (num) by i, looping i from 1 to 10.
+ Logic: Multiply the number (num) by i, looping i from 1 to 10.
 
 ======================================================================================
+ 7. Factorial of a Number (e.g., 5!=5*4*3*2*1=120)
+#include <stdio.h>
+
+int main() {
+    int i, n = 5;
+    long factorial = 1;
+    
+    for(i = 1; i <= n; i++) {
+        factorial *= i;  // factorial = factorial * i
+    }
+    
+    printf("Factorial of %d = %ld\n", n, factorial);
+    return 0;
+}
+output :
+Factorial of 5 = 120
+
+
+ Logic:
+Multiply numbers from 1 to n to compute n!.
+
 ======================================================================================
 ======================================================================================
 ======================================================================================
