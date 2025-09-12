@@ -167,6 +167,33 @@ Factorial of 5 = 120
 Multiply numbers from 1 to n to compute n!.
 
 ======================================================================================
+8. Check if a number is Prime
+#include <stdio.h>
+
+int main() {
+    int i, n = 17, isPrime = 1;
+ 
+    for(i = 2; i <= n/2; i++) {
+        if(n % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+ 
+    if(isPrime == 1)
+        printf("%d is a prime number.\n", n);
+    else
+        printf("%d is not a prime number.\n", n);
+ 
+    return 0;
+}
+
+output :
+17 is a prime number.
+
+Logic:
+A number is prime if it’s not divisible by any number from 2 to n/2.
+
 ======================================================================================
 ======================================================================================
 ======================================================================================
