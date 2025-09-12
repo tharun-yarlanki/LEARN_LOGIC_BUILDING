@@ -195,6 +195,26 @@ Logic:
 A number is prime if it’s not divisible by any number from 2 to n/2.
 
 ======================================================================================
+9. Reverse a Number (e.g., 1234 → 4321)
+#include <stdio.h>
+
+int main() {
+    int n = 1234, reversed = 0, remainder;
+ 
+    for(; n != 0; ) {
+        remainder = n % 10;                   // 1234 % 10 = 4 last digit ,3,2,1
+        reversed = reversed * 10 + remainder; // 0*10 + 4 = 4,3,2,1
+        n /= 10; // n=n/10                    // 1234 / 10 = 123,12,1
+    }
+ 
+    printf("Reversed number: %d\n", reversed);
+    return 0;
+}
+
+
+ Logic:
+Extract digits from right and build reversed number by multiplying by 10 and adding remainder.
+
 ======================================================================================
 ======================================================================================
 ======================================================================================
