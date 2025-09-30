@@ -1,1 +1,24 @@
+1)REVERSE NUMBER : 1234 ----4321
+=================
 
+class Main {
+    public static void main(String[] args) {
+       
+       int num = 568749; 
+       int rev = 0 ;
+       int digit;
+       int org = num ;
+      for(int i = 1 ; i<=num ; i++)
+      {
+          digit = num % 10 ; 
+          rev = rev*10+digit;
+          num = num/10;
+          i--;
+      }
+      System.out.println(rev + " this is rev of given number " + org );
+    }
+}
+
+947865 this is rev of given number 568749
+
+=== Code Execution Successful ===
