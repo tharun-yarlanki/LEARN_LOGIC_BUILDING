@@ -1,5 +1,5 @@
 1)REVERSE NUMBER : 1234 ----4321
-==================
+=================
 
 class Main {
     public static void main(String[] args) {
