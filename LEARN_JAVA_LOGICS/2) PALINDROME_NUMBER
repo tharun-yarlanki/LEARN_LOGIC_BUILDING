@@ -1,1 +1,35 @@
+2)PALINDROME NUMBER : 121 ---121 : BY USING FOR LOOP
+====================               ==================
 
+class Main {
+    public static void main(String[] args) {
+       
+       int num = 121; 
+       int rev = 0 ;
+       int digit;
+       int org = num ;
+      for(int i = 1 ; i<=num ; i++)
+      {
+          digit = num % 10 ; 
+          rev = rev*10+digit;
+          num = num/10;
+          i--;
+      }
+      if(rev == org)
+      {
+          System.out.println(rev + " it is palindrome  number " );
+      }
+      else 
+      {
+          System.out.println(org + " it is not a palindrome  number " );
+      }
+    }
+}
+
+121 it is palindrome  number 
+
+=== Code Execution Successful ===
+
+123 it is not a palindrome  number 
+
+=== Code Execution Successful ===
