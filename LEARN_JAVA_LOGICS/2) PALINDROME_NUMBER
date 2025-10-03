@@ -9,12 +9,12 @@ class Main {
        int rev = 0 ;
        int digit;
        int org = num ;
-      for(int i = 1 ; i<=num ; i++)
+      while(num > 0)
       {
           digit = num % 10 ; 
           rev = rev*10+digit;
           num = num/10;
-          i--;
+        
       }
       if(rev == org)
       {
@@ -71,3 +71,4 @@ class Main {
 123 it is not a palindrome  number 
 
 === Code Execution Successful ===
+======================================================================================================================
