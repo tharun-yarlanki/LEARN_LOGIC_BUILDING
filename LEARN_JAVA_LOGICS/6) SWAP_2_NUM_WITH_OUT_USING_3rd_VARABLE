@@ -1,1 +1,23 @@
+6)SWAP 2 NUMBERS WITH OUT USING 3rd VARIABLE : a = 10 , b = 20  : a = 20 , b = 10 
+ =============================================                    =================  
+class Main
+{
+public static void main(String [] args)
+{
+ int a = 10;
+ int b = 20;
+ a = a + b;
+ b = a - b;
+ a = a - b;
 
+System.out.println("this is a value : " + a);
+System.out.println("this is b value : " + b);
+}
+}
+OUTPUT : 
+this is a value : 20
+this is b value : 10
+
+=== Code Execution Successful ===
+===================================================================================================================================
+ 
