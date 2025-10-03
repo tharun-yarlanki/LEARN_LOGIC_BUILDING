@@ -1,1 +1,24 @@
+5) FACTORIAL_NUMBER : 5 : 5*4*3*2*1 = 120 : BY USING FOR LOOP
+  =================                       ====================
+class Main
+{
+public static void main(String [] args)
+{
+ int num = 5;
+ int fact = 1;
+ int org = num ;
 
+for(int i = 1 ; i<=num ; i++)
+{
+    fact = fact * i ;
+}
+
+System.out.println(fact + " it is factorial of : " + org);
+}
+}
+
+OUTPUT :
+120 it is factorial of : 5
+
+=== Code Execution Successful ===
+==================================================================================================
