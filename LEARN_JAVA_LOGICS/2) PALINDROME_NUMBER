@@ -1,6 +1,6 @@
 
-2)PALINDROME NUMBER : 121 ---121
-====================
+PALINDROME NUMBER : 121 ---121 : BY USING WHILE LOOP
+===================             ===================== 
 
 class Main {
     public static void main(String[] args) {
