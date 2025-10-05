@@ -1,1 +1,87 @@
 14) ATOMORPHIC_NUMBER : num = 25 : 25^2 = 625 : last digits of square are same as number 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🟩 1. Scanner sc = new Scanner(System.in);
+
+Scanner is a built-in Java class in the java.util package.
+👉 It’s used to take input from the user (like keyboard input).
+
+new Scanner(System.in)
+
+System.in means standard input stream, i.e. the keyboard.
+
+new Scanner(System.in) creates a Scanner object that can read data typed by the user.
+
+Scanner sc
+
+We are creating a variable sc (you can name it anything) which refers to this new Scanner object.
+
+🧠 Think of it like:
+
+“sc” is your input tool that can read numbers, strings, etc. from the keyboard.
+
+🟨 2. System.out.print("Enter a number: ");
+
+This line displays a message on the screen asking the user to enter a number.
+
+The method System.out.print() just prints the message without moving to the next line.
+(If you use System.out.println(), it prints and moves to the next line.)
+
+Example output on the console:
+
+Enter a number:
+
+🟦 3. int num = sc.nextInt();
+
+sc.nextInt() means:
+
+Use the Scanner object sc to read the next integer typed by the user.
+
+Suppose the user types:
+
+76
+
+
+Then sc.nextInt() reads that number and stores it into the variable num.
+
+So now,
+
+num = 76;
+
+💡 In simple words:
+Code	Meaning
+Scanner sc = new Scanner(System.in);	Create a tool to take input from keyboard
+System.out.print("Enter a number: ");	Ask the user to enter something
+int num = sc.nextInt();	Read the entered number and store it in variable num
+
+✅ Example Run:
+
+Enter a number: 76
+
+
+User types 76 → program stores it in num.
