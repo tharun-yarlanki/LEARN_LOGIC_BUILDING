@@ -1,1 +1,22 @@
+9) FIBONACCI_SERIES : num = 10 : 0,1,1,2,3,5,8,13,21,34 : BY USING FOR LOOP
+  ==================                                      =================
 
+
+class FibonacciSeries {
+    public static void main(String[] args) {
+       
+       int num = 10 ;
+       int first = 0;
+       int second = 1;
+       int next;
+       System.out.println("fibonacci series upto "+num+ " terms of this : ");
+       for(int i = 1 ; i<=num ; i++)
+       {
+           System.out.print(first + " ");
+           next = first + second;
+           first = second;
+           second = next;
+       }
+       
+    }
+}
