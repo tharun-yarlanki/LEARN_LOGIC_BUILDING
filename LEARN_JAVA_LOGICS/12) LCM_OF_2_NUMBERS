@@ -1,2 +1,28 @@
 12) LCM_OF_2_NUMBERS : num1 = 12 : 12,24,36,48,--- : num2 = 18,36,54,72,----- : LCM : 36 : BY USING WHILE LOOP
    =================                                                                       ====================
+class LCM {
+    public static void main(String[] args) {
+        
+        int num1 = 12;
+        int num2 = 18;
+        int lcm;
+        
+        int max = (num1 > num2) ? num1 : num2 ;
+        
+        while(true)
+        {
+            if(max % num1 ==0 && max % num2 ==0)
+            {
+                lcm = max ;
+                break;
+            }
+            max ++;
+        }
+        System.out.println("LCM of " + num1 + " and " + num2 + " is : " + lcm);
+    }
+}
+OUTPUT :
+LCM of 12 and 18 is : 36
+
+=== Code Execution Successful ===
+=============================================================================================================
