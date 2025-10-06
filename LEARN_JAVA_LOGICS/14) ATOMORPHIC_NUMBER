@@ -85,3 +85,37 @@ Enter a number: 76
 
 
 User types 76 → program stores it in num.
+
+=================================================================================================================
+sc.close();
+🧩 What it does
+sc is the Scanner object you created to read input:
+
+java
+Copy code
+Scanner sc = new Scanner(System.in);
+When you are done using the Scanner, sc.close(); closes the Scanner object.
+
+💡 Why we close it
+Free up resources
+
+Scanner uses system resources (like memory and input stream).
+
+Closing it tells Java: "I’m done using this input stream, you can release it."
+
+Good programming practice
+
+Helps avoid resource leaks (especially important when reading files or multiple inputs in larger programs).
+
+⚠️ Important Note
+If you close Scanner reading from System.in, you cannot read more input from keyboard afterward in the same program.
+
+For small programs (like our Automorphic number program), this is fine.
+
+🔹 Summary
+java
+Copy code
+sc.close();  // Closes Scanner, releases system resources
+Think of it like turning off a tap after filling a glass — no need to keep it running once you’re done.
+
+================================================================================================================================
