@@ -1,31 +1,45 @@
-14) ATOMORPHIC_NUMBER : num = 25 : 25^2 = 625 : last digits of square are same as number 
+14) ATOMORPHIC_NUMBER : num = 25 : 25^2 = 625 : last digits of square are same as number  : BY USING WHILE LOOP
+   ===================                                                                    ========================
 
+import java.util.Scanner;
 
+public class AutomorphicNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
 
+        int square = num * num;
+        int temp = num;
+        boolean isAutomorphic = true;
 
+        while (temp > 0) {
+            if (temp % 10 != square % 10) {
+                isAutomorphic = false;
+                break;
+            }
+            temp = temp / 10;
+            square = square / 10;
+        }
 
+        if (isAutomorphic) {
+            System.out.println(num + " is an Automorphic number.");
+        } else {
+            System.out.println(num + " is not an Automorphic number.");
+        }
 
+        sc.close();
+    }
+}
+OUTPUT :
+======
+Enter a number: 76
+76 is an Automorphic number.
 
+=== Code Execution Successful ===
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=======================================================================================================================
 🟩 1. Scanner sc = new Scanner(System.in);
 
 Scanner is a built-in Java class in the java.util package.
